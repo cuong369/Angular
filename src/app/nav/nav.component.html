@@ -1,0 +1,15 @@
+<nav id="nav" (click)="onClick($event)" [ngClass]="{'nav-close': !clicked}">
+  <div class="btn btn-primary btn-s btn-menu">
+    <a class="menu-trigger" href="#">
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
+  </div>
+  <ul class="nav">
+    <li><a [routerLink]="[ '/list' ]"><span class="icon-nav lmenu_user"></span><span class="nav-item">User
+          management</span></a></li>
+    <li><a [routerLink]="[ '/group' ]"><span class="icon-nav lmenu_group"></span><span class="nav-item">Group
+          management</span></a></li>
+  </ul>
+</nav>
